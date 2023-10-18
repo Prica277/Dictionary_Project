@@ -1,7 +1,8 @@
 """ 
 Filename: cookie_dictionary.py
 Author: Alex Price
-Description: A set of dictionaries to be temporarily stored and placed properly into the code at a later time.
+Description: A set of dictionaries to be temporarily stored and placed properly into the code at a later time. 
+All of the dictionaries will be nested into one massive dictionary called cookie_dictionary so that the code can work properly.
 """
 chocolate_chip = {
     "prep_time": "5 minutes",
