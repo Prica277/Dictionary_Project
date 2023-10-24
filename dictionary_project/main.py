@@ -23,8 +23,8 @@ def main():
         choice = utilities.get_menu_choice(new_menu, options)
         if choice == "1":
             # opens up the main cookie dictionary to search from.
-            # pick_recipe()
-            print("\nWe're working hard to bring this function up and running! Why not try another function?")
+            pick_recipe()
+            # print("\nWe're working hard to bring this function up and running! Why not try another function?")
         elif choice == "2":
             # opens a new file that allows the user to pick the recipe and then 
             # change the amount desired. It would then adjust the ingredient amounts accordingly.
@@ -48,18 +48,19 @@ def pick_recipe():
         else:
             user_recipe = user_recipe + user_cookie[i]
     print("You chose " + user_recipe + ". Is this right?")
-"""
     cont = input("Y/N: ")
+    cont = cont.upper()
     if cont == "N":
         #loops through the entire process again and returns to this check.
+        pick_recipe()
     elif cont == "Y": 
         print("Hooray!")
         #continues to the next step.
     else:
         print("Sorry, you've encountered an error. Please try again.")
-        #loops through the entire process again and returns to this check."
-        
-"""
+        pick_recipe()
+    
+            
 
 def change_measures():
     # opens a new file that allows the user to pick the recipe and then change the amount desired. 
@@ -70,5 +71,8 @@ def add_recipe():
     # edits the main cookie dictionary to add the newest recipe.
     print("\nWe're still hammering out the bugs in this function. Why not try another function?")
 
+def format_results():
+    # formats the results to make them more user friendly. 
+    print("\nThis function isn't availible yet. Sorry!")
 
 main()
