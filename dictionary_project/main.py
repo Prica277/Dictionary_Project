@@ -37,12 +37,12 @@ def main():
 
 
 def pick_recipe():
-    # opens up the main cookie dictionary to search from.
-    """
+    """opens up the main cookie dictionary to search from."""
+    
     print("\nHere's all the recipies you currently have to pick from: ")
-    for cookie in cookie_dictionary.keys():
+    for cookie in cookie_dictionary.cookie_dictionary.keys():
         print("\n" + cookie)
-    """
+    
     # gets the user's input and converts it into the style that the dictionary is named so that the code can find it.
     user_cookie = input("Enter the cookie type you're looking for! Be sure to spell it correctly: ")
     user_cookie = user_cookie.lower()
@@ -61,7 +61,7 @@ def pick_recipe():
     elif cont == "Y": 
         print("Hooray!")
         #continues to the next step.
-        for cookie, recipe in cookie_dictionary.get(user_recipe):
+        for cookie, recipe in cookie_dictionary.cookie_dictionary.get(user_recipe):
             print("\n" + cookie)
             print("\n" + recipe)
     else:
@@ -83,4 +83,6 @@ def format_results():
     # formats the results to make them more user friendly. 
     print("\nThis function isn't availible yet. Sorry!")
 
-main()
+if __name__ == "__main__":
+    pick_recipe()
+    main()

@@ -160,7 +160,7 @@ cookie_dictionary = {
 
 
     }
-    },
+    }
 
 """
 print("\nHere's all the recipies you currently have to pick from: ")
@@ -168,4 +168,5 @@ for cookie in cookie_dictionary.keys():
     print(cookie)
 
 """
-
+if __name__ == "__main__":
+    print(type(cookie_dictionary))
